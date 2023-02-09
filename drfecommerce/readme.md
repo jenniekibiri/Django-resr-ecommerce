@@ -12,3 +12,5 @@ py manage.py shell
 from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
 pip install -r requirements.txt
+//how to activate virtual environment
+source venv/Scripts/activate
