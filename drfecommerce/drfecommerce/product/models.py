@@ -10,12 +10,12 @@ class Category(MPTTModel):
     )
 
 
-class MPTTMeta:
-    order_insertion_by = ["name"]
+    class MPTTMeta:
+        order_insertion_by = ["name"]
 
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+      return self.name
 
 
 class Brand(models.Model):
@@ -23,8 +23,8 @@ class Brand(models.Model):
     description = models.TextField(blank=True)
 
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+      return self.name
 
 
 class Product(models.Model):
@@ -37,5 +37,5 @@ class Product(models.Model):
     )
 
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
