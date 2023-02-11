@@ -6,12 +6,12 @@ pytestmark = pytest.mark.django_db
 class TestCategoryModel:
     def test_str_method(self, category_factory):
         data = category_factory()
-        assert data.__str__() == "test_category"
+        assert data.__str__() == data.name
 
 class TestBrandModel:
     def test_str_method(sel, brand_factory):
         data = brand_factory()
-        assert data.__str__( )=="test_brand"
+        assert data.__str__( )== data.name
 
 class TestProductModel:
     def test_str_method(sel, product_factory, brand_factory, category_factory):
